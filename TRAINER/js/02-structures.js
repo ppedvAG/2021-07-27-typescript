@@ -50,8 +50,9 @@ console.info('\n NODE LIST of Elements TO ARRAY');
 //  pop, push, concat, join, and 14 more.ts(2740)
 // bei es5
 let nodeListEntriesES5 = Array.prototype.slice.call(numberInputs);
-// bei neueren es-Versionen:
+// ab es6:
 // let nodeListEntriesES6: Array<HTMLInputElement> = Array.from(numberInputs); // Type 'Element[]' is not assignable to type 'HTMLInputElement[]'.
-let nodeListEntriesES6 = Array.from(numberInputs); // Type 'Element[]' is not assignable to type 'HTMLInputElement[]'.
+// let nodeListEntriesES6: Array<HTMLInputElement> = Array.from((numberInputs as NodeListOf<HTMLInputElement>)); // Type 'Element[]' is not assignable to type 'HTMLInputElement[]'.
+let nodeListEntriesES6 = [...numberInputs];
 // oder Type Assertion später bei jedem Element einzeln in einer Iteration ausführen
 // let nodeListEntriesES6: Array<Element> = Array.from(numberInputs);
