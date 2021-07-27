@@ -56,3 +56,14 @@ let nodeListEntriesES5 = Array.prototype.slice.call(numberInputs);
 let nodeListEntriesES6 = [...numberInputs];
 // oder Type Assertion später bei jedem Element einzeln in einer Iteration ausführen
 // let nodeListEntriesES6: Array<Element> = Array.from(numberInputs);
+console.info('\n TUPEL');
+// Die gewünschten Datentypen vom Tupel werden INNERHALB von eckigen Klammern angegeben
+let tupel;
+// Zuweisung von Werten ist wie beim Array
+tupel = [new Date(), 'warmer Tag'];
+// Tupel können optionale Elemente beinhalten;
+let tupel2;
+tupel2 = [1, 'wert für 1', true];
+tupel2 = [2, 'wert für 2'];
+// Auf Einträge kann man mit Indizes zugreifen:
+console.log('tupel2[1] :>> ', tupel2[1]); // tupel2[1] :>>  wert für 2
