@@ -11,6 +11,6 @@ function login() {
     // let u: string = (<HTMLInputElement> document.getElementById('user')).textContent!; // mit Assertion zu HTMLInputElement ist die Option mit null weg
     // aber textContent ist 'string | null'
     // und textContent ist bei HTMLInputElement leer.
-    var u = document.getElementById('user').value;
+    let u = document.getElementById('user').value;
     document.getElementById('hi').textContent = "Hello " + u;
 }

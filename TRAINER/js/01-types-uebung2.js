@@ -1,8 +1,8 @@
 "use strict";
-var tisch = {
+let tisch = {
     höhe: 34,
     breite: 70,
 };
-var sofa = {
-    höhe: höhe
+let sofa = {
+    höhe
 };

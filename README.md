@@ -17,7 +17,7 @@ Ein Kurs von PPEDV :rocket:
 - [ ] Demo: [m01-types.ts](TRAINER/01-types.ts)
 - [ ] Commit: [m001 demo + aufgabe](https://github.com/ppedvAG/2021-07-27-typescript/commit/182153f431ab5932bedea0cab23448c637cccbbe)
 - [ ] Übung: [m01-types-uebung.ts](TRAINER/01-types-uebung.ts)
-- [ ] Commit:
+- [ ] Commit: [m001 lösung](https://github.com/ppedvAG/2021-07-27-typescript/commit/db75824a61511957c1a9a4b7f26077b74c7ac23e)
 
 ## MXXX | `name vom modul`
 
