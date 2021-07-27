@@ -6,10 +6,14 @@ Ein Kurs von PPEDV :rocket:
 
 - [ ] Folien: Greeter.pdf
 - [ ] [Commit](https://github.com/ppedvAG/2021-07-27-typescript/commit/10c7bb5365cb2d8216c4adf58b8b440f796c179a)
-  
-## M001 | GETTING STARTED
-
 - [ ] Folien: TYPESCRIPT.pdf > Intro
+- [ ] Deme [00-intro.ts](TRAINER/00-intro.ts)
+- [ ] Commit [m00 vor der übung](https://github.com/ppedvAG/2021-07-27-typescript/commit/a29561708505dcae983b8b60753c2232f0bf77e8)
+- [ ] Commit [m00 übungslösung](https://github.com/ppedvAG/2021-07-27-typescript/commit/f2c88489b0412950716670d32ec86b38db8e7254)
+  
+## M001 | TYPES
+
+- [ ] Folien: TYPESCRIPT.pdf > Types
 - [ ] Demo:
 - [ ] Übung:
 - [ ] Commit:
