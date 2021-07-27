@@ -103,4 +103,3 @@ tupel2 = [2, 'wert für 2'];
 console.log('tupel2[1] :>> ', tupel2[1]); // tupel2[1] :>>  wert für 2
 
 
-type coordinate2D = [number, number];

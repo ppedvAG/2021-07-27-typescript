@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>02-structures</title>
 
 </head>
+
 <body>
     <h1>02-structures</h1>
     <h2>Arrays</h2>
@@ -27,7 +29,7 @@
     <input type="number" value="44">
     <input type="number" value="55">
 
-    
+
     <h2>HTMLCollectionOf Elements</h2>
     <pre>
         getElementsByClassName()
@@ -57,24 +59,46 @@
     </pre>
     <hr>
 
-    
+
     <h2>Übung zu Tupel</h2>
     <pre>
         Fragen Sie vom Benutzer 3 2D-Koordinaten ab.
         Verwenden Sie diese, um ein SVG-Polygon zu zeichnen.
 
-        Syntax für Polygone:
-
+        Syntax für Polygone siehe hier in html:
     </pre>
 
+    <p>Beispiel Polygon</p>
     <svg width="300" height="300">
         <polygon points="22,3 14,25 5,30" style="fill: lime; stroke: purple; stroke-width: 3"></polygon>
     </svg>
 
+    <p>dynamisches Polygon</p>
+    <div id="coordinates">
+        <div> coord1
+            <lable>x<input type="number" value="0" min="0" max="300"></lable>
+            <lable>y<input type="number" value="0" min="0" max="300"></lable>
+        </div>
+        <div> coord2
+            <lable>x<input type="text" value="0" min="0" max="300"></lable>
+            <lable>y<input type="text" value="0" min="0" max="300"></lable>
+        </div>
+        <div> coord3
+            <lable>x<input type="text" value="0" min="0" max="300"></lable>
+            <lable>y<input type="text" value="0" min="0" max="300"></lable>
+        </div>
+        <button id="draw">draw polygon</button>
+
+    </div>
+    <svg width="300" height="300" id="svgForPolygon"  style="border: thin solid">
+
+    </svg>
 
 
 
     <script src="js/02-structures.js"></script>
     <script src="js/02-structures-uebung.js"></script>
+    <script src="js/02-tuples-uebung.js"></script>
 </body>
+
 </html>
