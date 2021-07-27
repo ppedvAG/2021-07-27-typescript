@@ -14,8 +14,9 @@ Ein Kurs von PPEDV :rocket:
 ## M001 | TYPES
 
 - [ ] Folien: TYPESCRIPT.pdf > Types
-- [ ] Demo:
-- [ ] Übung:
+- [ ] Demo: [m01-types.ts](TRAINER/01-types.ts)
+- [ ] Commit: [m001 demo + aufgabe](https://github.com/ppedvAG/2021-07-27-typescript/commit/182153f431ab5932bedea0cab23448c637cccbbe)
+- [ ] Übung: [m01-types-uebung.ts](TRAINER/01-types-uebung.ts)
 - [ ] Commit:
 
 ## MXXX | `name vom modul`
