@@ -12,7 +12,7 @@ in seiner BeschreibeMich()-Methode Informationen darüber ausgeben kann.
 
 Schreiben Sie danach eine neue Methode, welche als Parameter zwei Transportmittelobjekte übernimmt und
 nach Prüfung der Interfaces entweder ein Objekt auf das andere belädt oder eine Fehlermeldung ausgibt.
- */
+*/
 /*
 Übung 2.
 
