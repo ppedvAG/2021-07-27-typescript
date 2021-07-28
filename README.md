@@ -19,16 +19,21 @@ Ein Kurs von PPEDV :rocket:
 - [ ] Übung: [m01-types-uebung.ts](TRAINER/01-types-uebung.ts)
 - [ ] Commit: [m001 lösung](https://github.com/ppedvAG/2021-07-27-typescript/commit/db75824a61511957c1a9a4b7f26077b74c7ac23e)
 
-## MXXX | `name vom modul`
+## M002 | STRUCTURES
 
 - [ ] Folien:
 - [ ] Demo:
 - [ ] Übung:
 - [ ] Commit:
 
-## M
+## M003 | FUNCTIONS
 
-- classes
+## M004 | CLASSES
+
+- [ ] Demo [04-classes.ts](TRAINER/04-classes.ts)
+
+## M005 |
+
 - interfaces
 - objects
 - enums
