@@ -6,6 +6,19 @@ Mit Hilfe von einem Methodendekorator werden die Änderungen an dem Transportmit
 Aufgabe Option 2
 Mit Hilfe von einem Methodendekorator werden die Argumente von bremse und beschleunige geprüft, ob es keine negativen Zahlen sind
 */
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+// wird aufgerufen beim Instanziieren der Klasse
+// todo #2
+function LoggeDieGeschwindigkeit(target, propertyKey, propertyDescriptor // Beschreibung der Property
+) {
+    let geschwMeldung = propertyDescriptor.value();
+    console.log('geschwMeldung :>> ', geschwMeldung);
+}
 class Transport {
     constructor(modell, preis, maxGeschwindigkeit) {
         this.maxGeschwindigkeit = maxGeschwindigkeit;
@@ -18,7 +31,7 @@ class Transport {
         this.preis = preis;
     }
     beschleunige(km) {
-        if (this.aktuelleGeschwindigkeit + km < this.maxGeschwindigkeit) {
+        if ((this.aktuelleGeschwindigkeit + km) < this.maxGeschwindigkeit) {
             this.aktuelleGeschwindigkeit = this.aktuelleGeschwindigkeit + km;
             return 'akt Geschw: ' + String(this.aktuelleGeschwindigkeit);
         }
@@ -54,4 +67,13 @@ class Transport {
      `;
     }
 }
+__decorate([
+    LoggeDieGeschwindigkeit
+], Transport.prototype, "beschleunige", null);
+__decorate([
+    LoggeDieGeschwindigkeit
+], Transport.prototype, "bremse", null);
+let newTransportMittel = new Transport('modellString', 300000, 250);
+// newTransportMittel.beschleunige(40);
+// newTransportMittel.bremse(20);
 //# sourceMappingURL=07-decorators-uebung.js.map
