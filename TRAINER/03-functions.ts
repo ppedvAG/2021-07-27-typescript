@@ -22,6 +22,8 @@ function buildName2 (firstName: string, lastName: string, middleName = ""): stri
 console.log("buildName2('Max', 'Mustermann') :>> ", buildName2('Max','Mustermann')); //  Max  Mustermann
 console.log("buildName2('Max', 'Mustermann', 'Peter') :>> ", buildName2('Max','Mustermann', 'Peter')); //  Max Peter Mustermann
 
+
+
 // UNDIFINED NUMBER OF ARGS
 function giveNodeNames(...args: any[]): string[] {
     console.log('args :>> ', args);
@@ -30,7 +32,7 @@ function giveNodeNames(...args: any[]): string[] {
         arrayOfNodeNames.push(args[0].nodeName);
     } else {
         for (const iterator of args[0]) {
-            arrayOfNodeNames.push(iterator);
+            arrayOfNodeNames.push(iterator.nodeName);
         }
     }
     return arrayOfNodeNames

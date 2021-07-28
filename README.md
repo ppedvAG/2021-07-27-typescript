@@ -25,3 +25,14 @@ Ein Kurs von PPEDV :rocket:
 - [ ] Demo:
 - [ ] Übung:
 - [ ] Commit:
+
+## M
+
+- classes
+- interfaces
+- objects
+- enums
+- decorators
+- generics
+- unions & intersections
+- postfix (!, ?)

@@ -23,7 +23,7 @@ function giveNodeNames(...args) {
     }
     else {
         for (const iterator of args[0]) {
-            arrayOfNodeNames.push(iterator);
+            arrayOfNodeNames.push(iterator.nodeName);
         }
     }
     return arrayOfNodeNames;
