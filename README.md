@@ -36,11 +36,19 @@ Ein Kurs von PPEDV :rocket:
 
 - [ ] Demo [05-interfaces.ts]()
 
+## M006 | UNIONS & INTERSECTIONS
 
-
-- objects
-- enums
-- decorators
-- generics
 - unions & intersections
 - postfix (!, ?)
+
+## M007 |
+
+- decorators
+
+## M008 |
+
+- generics
+
+- objects
+
+- enums
