@@ -15,4 +15,47 @@ und folgenden Methoden:
 Überlegen Sie welche Datentypen die Eigenschaften am besten abbilden und welche Zugriffsmodifizierer (public/ private) geeignet sind. Programmieren Sie zudem einen oder mehrere Konstruktoren.
 
 Legen Sie eine Instanz der Klasse Transport im FuhrparkKonsument an. Rufen Sie die Methode ‚BeschreibeMich‘ auf.
- */ 
+ */
+class Transportmittel {
+    constructor(modell, preis, maxGeschwindigkeit) {
+        this.maxGeschwindigkeit = maxGeschwindigkeit;
+        this.istAn = false;
+        this.aktuelleGeschwindigkeit = 0;
+        this.modell = modell;
+        this.preis = preis;
+    }
+    beschleunige(km) {
+        if (this.aktuelleGeschwindigkeit + km < this.maxGeschwindigkeit) {
+            this.aktuelleGeschwindigkeit = this.aktuelleGeschwindigkeit + km;
+            return 'akt Geschw: ' + String(this.aktuelleGeschwindigkeit);
+        }
+        else {
+            this.aktuelleGeschwindigkeit = this.maxGeschwindigkeit;
+            return 'max Grenze erreicht, nämlich: ' + String(this.aktuelleGeschwindigkeit);
+        }
+    }
+    bremse(km) {
+        if (this.aktuelleGeschwindigkeit - km > 0) {
+            this.aktuelleGeschwindigkeit = this.aktuelleGeschwindigkeit - km;
+            return 'akt Geschw: ' + String(this.aktuelleGeschwindigkeit);
+        }
+        else {
+            this.aktuelleGeschwindigkeit = 0;
+            return 'akt Geschw: ' + String(this.aktuelleGeschwindigkeit);
+        }
+    }
+    starteMotor() {
+        !this.istAn ? this.istAn = true : 'Transportmittel war schon an';
+    }
+    stoppeMotor() {
+        this.istAn ? this.istAn = false : 'Transportmittel war schon aus';
+    }
+    beschreibeMich() {
+        return `
+     modell: ${this.modell}
+     preis: ${this.preis}
+     aktuelleGeschwindigkeit: ${this.aktuelleGeschwindigkeit}
+     `;
+    }
+}
+document.getElementById('transportMittelOutput').innerText = new Transportmittel('VW Polo', 15000, 190).beschreibeMich();
