@@ -30,3 +30,8 @@ function giveNodeNames(...args) {
 }
 let nodeNamesOfClassTest = giveNodeNames(document.getElementsByClassName("test"));
 console.log('nodeNamesOfClassTest :>> ', nodeNamesOfClassTest);
+// JS: funktionen mit zuweisung in return:
+console.log((function testReturn(testArg) {
+    return testArg = 40;
+})(30)); // ausgabe: 40
+/* todo #1 */

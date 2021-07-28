@@ -21,6 +21,9 @@ class Transportmittel {
         this.maxGeschwindigkeit = maxGeschwindigkeit;
         this.istAn = false;
         this.aktuelleGeschwindigkeit = 0;
+        this.stoppeMotor = () => 
+        // in dieser Syntax wird entweder false oder 'transport......' zurückgegeben
+        this.istAn ? this.istAn = false : 'Transportmittel war schon aus';
         this.modell = modell;
         this.preis = preis;
     }
@@ -45,10 +48,13 @@ class Transportmittel {
         }
     }
     starteMotor() {
-        !this.istAn ? this.istAn = true : 'Transportmittel war schon an';
-    }
-    stoppeMotor() {
-        this.istAn ? this.istAn = false : 'Transportmittel war schon aus';
+        if (!this.istAn) {
+            this.istAn = true;
+            return 'ist an';
+        }
+        else {
+            return 'Transportmittel war schon an';
+        }
     }
     beschreibeMich() {
         return `
@@ -58,4 +64,7 @@ class Transportmittel {
      `;
     }
 }
-document.getElementById('transportMittelOutput').innerText = new Transportmittel('VW Polo', 15000, 190).beschreibeMich();
+// teste andere Methoden aus
+const newTransport = new Transportmittel('VW Polo', 15000, 190);
+document.getElementById('transportMittelOutput').innerText = newTransport.beschreibeMich();
+console.log('newTransport.stoppeMotor() :>> ', newTransport.stoppeMotor()); // Transportmittel war schon aus
