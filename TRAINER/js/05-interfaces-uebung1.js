@@ -66,7 +66,7 @@ class Transportmittel1 {
 }
 // teste andere Methoden aus
 const newTransport1 = new Transportmittel1('VW Polo', 15000, 190);
-document.getElementById('transportMittelOutput').innerText = newTransport.beschreibeMich();
+console.log('newTransport1.beschreibeMich() :>> ', newTransport1.beschreibeMich());
 console.log('newTransport.stoppeMotor() :>> ', newTransport1.stoppeMotor()); // Transportmittel war schon aus
 class Auto extends Transportmittel1 {
     constructor(modell, preis, maxGeschwindigkeit, produzent) {
@@ -75,6 +75,8 @@ class Auto extends Transportmittel1 {
         this.produzent = produzent;
     }
 }
+const newAuto1 = new Auto('VW Polo', 15000, 190, 'Volkswagen');
+const newAuto2 = new Auto('BMW 1', 30000, 200, 'BMW');
 class Schiff extends Transportmittel1 {
     constructor(modell, preis, maxGeschwindigkeit, wasserVerdrängung, maxAnzahlVonGeladenen) {
         super(modell, preis, maxGeschwindigkeit);
@@ -85,8 +87,31 @@ class Schiff extends Transportmittel1 {
         this.anzahlVonAktGeladenen = 0;
     }
     belade(technikZuLaden) {
+        if (this.anzahlVonAktGeladenen < this.maxAnzahlVonGeladenen) {
+            this.aktuellGeladen.push(technikZuLaden);
+        }
+        return this.anzahlVonAktGeladenen = this.aktuellGeladen.length;
     }
     entlade(technikZuEntladen) {
-        throw new Error("Method not implemented.");
+        if (this.aktuellGeladen.includes(technikZuEntladen)) {
+            let index = this.aktuellGeladen.indexOf(technikZuEntladen);
+            this.aktuellGeladen.splice(index, 1);
+        }
+        return this.anzahlVonAktGeladenen = this.aktuellGeladen.length;
     }
 }
+const newSchiff = new Schiff('Titanic', 30000000, 200, 500, 50);
+newSchiff.belade(newAuto1);
+console.log('newSchiff.anzahlVonAktGeladenen :>> ', newSchiff.anzahlVonAktGeladenen);
+console.log('newSchiff.aktuellGeladen :>> ', newSchiff.aktuellGeladen);
+function beladeWennMöglich(trMittel1, trMittel2) {
+    if ('belade' in trMittel1 && !('belade' in trMittel2)) {
+        trMittel1.belade(trMittel2);
+        return 'Beladen erfolgreich';
+    }
+    else {
+        return 'Beladen nicht möglich';
+    }
+}
+console.log('beladeWennMöglich(newSchiff, newAuto1) :>> ', beladeWennMöglich(newSchiff, newAuto1));
+console.log('beladeWennMöglich(newAuto2, newAuto1) :>> ', beladeWennMöglich(newAuto2, newAuto1));
