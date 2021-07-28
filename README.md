@@ -32,9 +32,12 @@ Ein Kurs von PPEDV :rocket:
 
 - [ ] Demo [04-classes.ts](TRAINER/04-classes.ts)
 
-## M005 |
+## M005 | INTERFACES
 
-- interfaces
+- [ ] Demo [05-interfaces.ts]()
+
+
+
 - objects
 - enums
 - decorators

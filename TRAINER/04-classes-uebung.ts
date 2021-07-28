@@ -66,7 +66,6 @@ class Transportmittel {
      `
     }
 }
-
 // teste andere Methoden aus
 const newTransport = new Transportmittel('VW Polo', 15000, 190);
 document.getElementById('transportMittelOutput')!.innerText = newTransport.beschreibeMich();
