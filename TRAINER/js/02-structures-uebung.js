@@ -17,3 +17,4 @@ for (const iterator of myRedElements) {
         iterator.textContent = 'Klasse angewendet';
     }
 }
+//# sourceMappingURL=02-structures-uebung.js.map

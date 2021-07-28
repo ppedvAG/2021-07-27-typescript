@@ -115,3 +115,4 @@ function beladeWennMöglich(trMittel1, trMittel2) {
 }
 console.log('beladeWennMöglich(newSchiff, newAuto1) :>> ', beladeWennMöglich(newSchiff, newAuto1));
 console.log('beladeWennMöglich(newAuto2, newAuto1) :>> ', beladeWennMöglich(newAuto2, newAuto1));
+//# sourceMappingURL=05-interfaces-uebung1.js.map

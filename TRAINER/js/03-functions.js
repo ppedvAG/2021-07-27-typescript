@@ -35,3 +35,4 @@ console.log((function testReturn(testArg) {
     return testArg = 40;
 })(30)); // ausgabe: 40
 /* todo #1 */
+//# sourceMappingURL=03-functions.js.map

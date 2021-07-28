@@ -13,3 +13,4 @@ let einObjekt = { id: 1, methode: () => { } };
 // console.log('resultat1 :>> ', resultat1);
 let resultat2 = (_a = einObjekt.adresse) === null || _a === void 0 ? void 0 : _a.straße;
 console.log('resultat2 :>> ', resultat2); // Wert undefined, ohne Fehlermeldung
+//# sourceMappingURL=06-postfix.js.map

@@ -72,3 +72,4 @@ console.log('Creature3.idOfCreatureDefinition :>> ', Creature3.idOfCreatureDefin
  console.log('fctname called');
 })()
 */ 
+//# sourceMappingURL=04-classes.js.map

@@ -23,3 +23,4 @@ function giveTodoTitlesToList(todos) {
         ulTodosList.innerHTML += `<li>${todo.title}</li>`;
     }
 }
+//# sourceMappingURL=05-interfaces-uebung2.js.map

@@ -47,3 +47,4 @@ class Animal {
         }
     }
 }
+//# sourceMappingURL=05-interfaces.js.map

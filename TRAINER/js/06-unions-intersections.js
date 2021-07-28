@@ -26,3 +26,4 @@ class ChemischesElement {
         this.alter = 0;
     }
 }
+//# sourceMappingURL=06-unions-intersections.js.map

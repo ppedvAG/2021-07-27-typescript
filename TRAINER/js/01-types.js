@@ -79,3 +79,4 @@ let test2;
 test2 = { a: 'a', b: 'b' };
 // ANWENDUNGSBEISPIEL FÜR LITERAL TYPES:
 let myUnits;
+//# sourceMappingURL=01-types.js.map

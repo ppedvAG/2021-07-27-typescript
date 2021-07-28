@@ -8,3 +8,4 @@
 let sofa = {
     höhe
 } */ 
+//# sourceMappingURL=01-types-uebung2.js.map

@@ -16,3 +16,4 @@ function handleInput() {
     }
 }
 document.getElementById('confirm').onclick = handleInput;
+//# sourceMappingURL=01-types-uebung.js.map

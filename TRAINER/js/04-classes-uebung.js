@@ -68,3 +68,4 @@ class Transportmittel {
 const newTransport = new Transportmittel('VW Polo', 15000, 190);
 document.getElementById('transportMittelOutput').innerText = newTransport.beschreibeMich();
 console.log('newTransport.stoppeMotor() :>> ', newTransport.stoppeMotor()); // Transportmittel war schon aus
+//# sourceMappingURL=04-classes-uebung.js.map

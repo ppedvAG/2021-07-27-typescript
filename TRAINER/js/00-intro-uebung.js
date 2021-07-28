@@ -14,3 +14,4 @@ function login() {
     let u = document.getElementById('user').value;
     document.getElementById('hi').textContent = "Hello " + u;
 }
+//# sourceMappingURL=00-intro-uebung.js.map

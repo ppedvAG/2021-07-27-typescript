@@ -67,3 +67,4 @@ tupel2 = [1, 'wert für 1', true];
 tupel2 = [2, 'wert für 2'];
 // Auf Einträge kann man mit Indizes zugreifen:
 console.log('tupel2[1] :>> ', tupel2[1]); // tupel2[1] :>>  wert für 2
+//# sourceMappingURL=02-structures.js.map

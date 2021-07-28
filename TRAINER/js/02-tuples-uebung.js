@@ -34,3 +34,4 @@ function drawPolygon() {
 document.getElementById('draw').onclick = drawPolygon;
 let numb1 = Number('4');
 let numb2 = +'4';
+//# sourceMappingURL=02-tuples-uebung.js.map
