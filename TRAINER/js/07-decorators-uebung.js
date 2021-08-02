@@ -19,7 +19,7 @@ function LoggeDieGeschwindigkeit(target, propertyKey, propertyDescriptor // Besc
     let geschwMeldung = propertyDescriptor.value();
     console.log('geschwMeldung :>> ', geschwMeldung);
 }
-class Transport {
+class TransportMtl {
     constructor(modell, preis, maxGeschwindigkeit) {
         this.maxGeschwindigkeit = maxGeschwindigkeit;
         this.istAn = false;
@@ -69,11 +69,11 @@ class Transport {
 }
 __decorate([
     LoggeDieGeschwindigkeit
-], Transport.prototype, "beschleunige", null);
+], TransportMtl.prototype, "beschleunige", null);
 __decorate([
     LoggeDieGeschwindigkeit
-], Transport.prototype, "bremse", null);
-let newTransportMittel = new Transport('modellString', 300000, 250);
+], TransportMtl.prototype, "bremse", null);
+let newTransportMittel = new TransportMtl('modellString', 300000, 250);
 // newTransportMittel.beschleunige(40);
 // newTransportMittel.bremse(20);
 //# sourceMappingURL=07-decorators-uebung.js.map

@@ -18,7 +18,7 @@ function LoggeDieGeschwindigkeit(
     
 }
 
-class Transport {
+class TransportMtl {
     istAn: boolean = false;
     private preis: number;
     private modell: string;
@@ -73,6 +73,6 @@ class Transport {
     }
 }
 
-let newTransportMittel = new Transport('modellString', 300000, 250);
+let newTransportMittel = new TransportMtl('modellString', 300000, 250);
 // newTransportMittel.beschleunige(40);
 // newTransportMittel.bremse(20);
